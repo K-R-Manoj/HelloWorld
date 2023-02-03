@@ -1,13 +1,13 @@
 <div>
   <h1>Hello World</h1>
 </div>
-<div class="createbutton1" id="createbutton">Create button</div>
-<div class="deletebutton1" id="deletebutton">delete button</div>
-<div class="updatebutton1" id="updatebutton">update button</div>
-<div class="downloadbutton1" id="downloadbutton">download button</div>
-<div class="timepassbutton1" id="timepassbutton">Time pass button</div>
-<div class="passtimebutton1" id="passtimebutton">Pass Time button</div>
+<div class="createbutton1" id="createbutton"> <button (click)="CreateButton()">Create Button</button> </div>
+<div class="deletebutton1" id="deletebutton"><button (click)="deleteButton()">delete button</button></div>
+<div class="updatebutton1" id="updatebutton"><button (click)="UpdateButton()">update button</button></div>
+<div class="downloadbutton1" id="downloadbutton"><button (click)="DownloadButton()">download button</button></div>
+<div class="timepassbutton1" id="timepassbutton"><button (click)="TimepassButton()">Time pass button</button></div>
+<div class="passtimebutton1" id="passtimebutton"><button (click)="PassTimeButton()">Pass Time button</button></div>
 
-<div class="samebutton">Same button1</div>
-<div class="samebutton">Same button 2</div>
+<div class="samebutton"><button (click)="SameButton1()">Same button1</button></div>
+<div class="samebutton"><button (click)="SameButton2()">Same button 2</button></div>
 <router-outlet></router-outlet>
