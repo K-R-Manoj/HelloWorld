@@ -6,8 +6,23 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Fathom - beautiful, simple website analytics -->
+  <script src="https://cdn.usefathom.com/script.js" data-site="SMYNTTKD" defer></script>
+  <!-- / Fathom -->
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    window.addEventListener('load', (event) => {
+            document.getElementById('SameButton').addEventListener('click', () => {
+                    fathom.trackGoal('3Q2GYZKO', 0);
+            });
+    });
+  </script>
+  <script>
+    window.addEventListener('load', (event) => {
+            fathom.trackGoal('II3X8CNZ', 0);
+    });
+  </script>
 </body>
 </html>
