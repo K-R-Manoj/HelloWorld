@@ -20,6 +20,10 @@
     // but it's recommended you remove it for production
     mixpanel.init('b0705509658019520711943512b4079a', {debug: true}); 
     mixpanel.track('Sign up');
+    mixpanel.track('Sign Up', {
+      'source': "Pat's affiliate site",
+      'Opted out of email': true,
+    });
   </script>
   <!-- MIxPannel -->
 
