@@ -63,8 +63,12 @@
 
   <!-- mixpanel Start -->
   <script type="text/javascript">
-    mixpanel.track("Create Button", {
-        "Export": "Create Export Button"
+    window.addEventListener('load', (event) => {
+        document.getElementById('SameButton').addEventListener('click', () => {
+          mixpanel.track("Create Button", {
+            "Export": "Create Export Button"
+          });
+        });
     });
   </script>
   <!-- MixPannel End -->
