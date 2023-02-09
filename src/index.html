@@ -64,9 +64,17 @@
   <!-- mixpanel Start -->
   <script type="text/javascript">
     window.addEventListener('load', (event) => {
-        document.getElementById('SameButton').addEventListener('click', () => {
+        document.getElementById('createbutton').addEventListener('click', () => {
           mixpanel.track("Create Button", {
             "Export": "Create Export Button"
+          });
+        });
+    });
+
+    window.addEventListener('load', (event) => {
+        document.getElementById('downloadbutton').addEventListener('click', () => {
+          mixpanel.track("Download Button", {
+            "Export": "Asset Exprot Download Button"
           });
         });
     });
