@@ -46,6 +46,7 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- fathom -->
   <script>
     window.addEventListener('load', (event) => {
             document.getElementById('SameButton').addEventListener('click', () => {
@@ -58,5 +59,15 @@
             fathom.trackGoal('II3X8CNZ', 0);
     });
   </script>
+  <!-- end fathom -->
+
+  <!-- mixpanel Start -->
+  <script type="text/javascript">
+    mixpanel.track("#createbutton button", "Create Button", {
+        "referrer": document.referrer,
+        "Export": "Create Export Button"
+    });
+  </script>
+  <!-- MixPannel End -->
 </body>
 </html>
