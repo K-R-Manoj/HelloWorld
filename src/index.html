@@ -87,6 +87,13 @@
 
   <!-- Plausible Start Event -->
   <script>
+    window.addEventListener('load', (event) => {
+      document.getElementById('deletebutton').addEventListener('click', () => {
+        plausible('Delete', {props: {method: 'HTTP', Region: 'Europe'}})
+      });
+    });
+
+
     let buttons = document.querySelectorAll("button[data-analytics]");
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', handleFormEvent);
